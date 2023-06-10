@@ -11,15 +11,15 @@ namespace SnakeAndLadder
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter 1st No ");
+            Console.WriteLine("Enter Age ");
             int a=Convert.ToInt32(Console.ReadLine());
-            if(a%2 == 0)
+            if(a>18)
             {
-                Console.WriteLine(a+" is Even Number");
+                Console.WriteLine("Candidate is Eligible");
             }
             else
             {
-                Console.WriteLine(a + " is Odd Number");
+                Console.WriteLine( "Candidate is not Eligible");
             }
 
 
