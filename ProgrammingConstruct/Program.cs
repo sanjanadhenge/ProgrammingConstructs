@@ -13,15 +13,13 @@ namespace SnakeAndLadder
         {
             Console.WriteLine("Enter 1st No ");
             int a=Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter 2nd No ");
-            int b = Convert.ToInt32(Console.ReadLine());
-            if(a==b)
+            if(a%2 == 0)
             {
-                Console.WriteLine("Two Numbers are Equal");
+                Console.WriteLine(a+" is Even Number");
             }
             else
             {
-                Console.WriteLine("Two Numbers are not Equal");
+                Console.WriteLine(a + " is Odd Number");
             }
 
 
