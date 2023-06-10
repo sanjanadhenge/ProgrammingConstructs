@@ -11,23 +11,23 @@ namespace SnakeAndLadder
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter 1st num ");
+            Console.WriteLine("Enter Marks in Physics ");
             int a=Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter 2nd num ");
+            Console.WriteLine("Enter Marks in Chemistry");
             int b = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter 3rd Num ");
+            Console.WriteLine("Enter Marks in Maths ");
             int c = Convert.ToInt32(Console.ReadLine());
-            if (a>b && a>c)
+            if (a>=55 && b>=50 && c>=65 && (a+b+c)>=180)
             {
-                Console.WriteLine(a+ "is Largest");
+                Console.WriteLine( "Eligible for admission");
             }
-            else if(b>a && b>c)
+            else if((c+a)>=140 || (c+b)>=140)
             {
-                Console.WriteLine(b + "is Largest");
+                Console.WriteLine("Eligible for admission");
             }
             else
             {
-                Console.WriteLine(c + "is Largest");
+                Console.WriteLine("Not Eligible for admission");
             }
 
 
