@@ -11,37 +11,57 @@ namespace SnakeAndLadder
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("1.Sunday 2.Monday 3.Tuesday 4.Wednesday 5.Thrusday 6.Friday 7.Saturday");
-            int a=Convert.ToInt32(Console.ReadLine());
-            switch(a)
+
+            Console.WriteLine("Calculator");
+            Console.WriteLine("----------------------------");
+            Console.WriteLine("1.Add");
+            Console.WriteLine("2.Substract");
+            Console.WriteLine("3.Multiply");
+            Console.WriteLine("4.Divide");
+
+            Console.Write("Enter Choice(1-4):");
+            int ch = Int32.Parse(Console.ReadLine());
+
+            int a, b, c;
+
+            switch (ch)
             {
                 case 1:
-                    Console.WriteLine("Sunday");
+                    Console.Write("Enter A:");
+                    a = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Enter B:");
+                    b = Convert.ToInt32(Console.ReadLine());
+                    c = a + b;
+                    Console.WriteLine("Sum = {0}", c);
                     break;
                 case 2:
-                    Console.WriteLine("Monday");
+                    Console.Write("Enter A:");
+                    a = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Enter B:");
+                    b = Convert.ToInt32(Console.ReadLine());
+                    c = a - b;
+                    Console.WriteLine("Difference = {0}", c);
                     break;
                 case 3:
-                    Console.WriteLine("Tuesday");
+                    Console.Write("Enter A:");
+                    a = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Enter B:");
+                    b = Convert.ToInt32(Console.ReadLine());
+                    c = a * b;
+                    Console.WriteLine("Product = {0}", c);
                     break;
                 case 4:
-                    Console.WriteLine("Wednesday");
-                    break;
-                case 5:
-                    Console.WriteLine("Thursday");
-                    break;
-                case 6:
-                    Console.WriteLine("Friday");
-                    break;
-                case 7:
-                    Console.WriteLine("Saturday");
+                    Console.Write("Enter A:");
+                    a = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Enter B:");
+                    b = Convert.ToInt32(Console.ReadLine());
+                    c = a / b;
+                    Console.WriteLine("Quotient = {0}", c);
                     break;
                 default:
-                    Console.WriteLine("Enter valid number");
+                    Console.WriteLine("Invalid Choice");
                     break;
             }
-            
-          
 
 
 
