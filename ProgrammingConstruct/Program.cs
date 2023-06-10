@@ -11,24 +11,37 @@ namespace SnakeAndLadder
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter Marks in Physics ");
+            Console.WriteLine("1.Sunday 2.Monday 3.Tuesday 4.Wednesday 5.Thrusday 6.Friday 7.Saturday");
             int a=Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter Marks in Chemistry");
-            int b = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter Marks in Maths ");
-            int c = Convert.ToInt32(Console.ReadLine());
-            if (a>=55 && b>=50 && c>=65 && (a+b+c)>=180)
+            switch(a)
             {
-                Console.WriteLine( "Eligible for admission");
+                case 1:
+                    Console.WriteLine("Sunday");
+                    break;
+                case 2:
+                    Console.WriteLine("Monday");
+                    break;
+                case 3:
+                    Console.WriteLine("Tuesday");
+                    break;
+                case 4:
+                    Console.WriteLine("Wednesday");
+                    break;
+                case 5:
+                    Console.WriteLine("Thursday");
+                    break;
+                case 6:
+                    Console.WriteLine("Friday");
+                    break;
+                case 7:
+                    Console.WriteLine("Saturday");
+                    break;
+                default:
+                    Console.WriteLine("Enter valid number");
+                    break;
             }
-            else if((c+a)>=140 || (c+b)>=140)
-            {
-                Console.WriteLine("Eligible for admission");
-            }
-            else
-            {
-                Console.WriteLine("Not Eligible for admission");
-            }
+            
+          
 
 
 
