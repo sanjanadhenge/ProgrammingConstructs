@@ -13,15 +13,17 @@ namespace SnakeAndLadder
         {
 
             Console.WriteLine("Enter the power ");
-            double a= Convert.ToInt32(Console.ReadLine());
-            double result = 0;
-            for(int i = 0; i <=a; i++)
+            int a= Convert.ToInt32(Console.ReadLine());
+          int  result = 0;
+            int sum = 0;
+            for(int i = 1; i <=a; i++)
             {
-                result = Math.Pow(2, i);
-                Console.WriteLine("2*"+i+"="+result);
+                result = i * i;
+                sum += result;
+               
             }
-            
-        
+            Console.WriteLine("sum of the square is =>" + result);
+
 
 
 
