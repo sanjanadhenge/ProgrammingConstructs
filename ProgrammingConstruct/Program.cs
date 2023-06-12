@@ -12,26 +12,17 @@ namespace SnakeAndLadder
         public static void Main(string[] args)
 
         {
-            bool flag = true;
-            int head=0,tail=0;
-            Random random = new Random();
-            while(flag)
+            string s = "", rev = "";
+            int len = 0;
+            Console.WriteLine("Enter a string");
+            s = Console.ReadLine();
+            len = s.Length - 1;
+            while (len >= 0)
             {
-                  int check = random.Next(0,2);
-                  if(check == 0)
-                {
-                    tail++;
-                }
-                  if(check == 1)
-                {
-                    head++;
-                }
-                  if(head == 20 || tail == 20)
-                {
-                    flag = false;
-                }
+                rev = rev + s[len];
+                len--;
             }
-            Console.WriteLine("Head=> "+head + "Tail=> " + tail);
+            Console.WriteLine("Reverse of string is {0}", rev);
         }
 
     }
