@@ -12,14 +12,26 @@ namespace SnakeAndLadder
         public static void Main(string[] args)
 
         {
-            int i, fact = 1, number;
-            Console.Write("Enter any Number: ");
-            number = Convert.ToInt32(Console.ReadLine());
-            for (i = 1; i <= number; i++)
+            bool flag = true;
+            int head=0,tail=0;
+            Random random = new Random();
+            while(flag)
             {
-                fact = fact * i;
+                  int check = random.Next(0,2);
+                  if(check == 0)
+                {
+                    tail++;
+                }
+                  if(check == 1)
+                {
+                    head++;
+                }
+                  if(head == 20 || tail == 20)
+                {
+                    flag = false;
+                }
             }
-            Console.Write("Factorial of " + number + " is: " + fact);
+            Console.WriteLine("Head=> "+head + "Tail=> " + tail);
         }
 
     }
