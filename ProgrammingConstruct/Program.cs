@@ -10,24 +10,19 @@ namespace SnakeAndLadder
 
     {
         public static void Main(string[] args)
+
         {
-
-            Console.WriteLine("Enter the power ");
-            int a= Convert.ToInt32(Console.ReadLine());
-          int  result = 0;
-            int sum = 0;
-            for(int i = 1; i <=a; i++)
+            int i, fact = 1, number;
+            Console.Write("Enter any Number: ");
+            number = Convert.ToInt32(Console.ReadLine());
+            for (i = 1; i <= number; i++)
             {
-                result = i * i;
-                sum += result;
-               
+                fact = fact * i;
             }
-            Console.WriteLine("sum of the square is =>" + result);
-
-
-
-
+            Console.Write("Factorial of " + number + " is: " + fact);
         }
 
     }
+
+    
 }
